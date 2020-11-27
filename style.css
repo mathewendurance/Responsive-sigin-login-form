@@ -11,9 +11,16 @@
   color: red;
 }
 .eye i {
-  color: red;
+  color: green;
+}
+p {
+  color: rgb(247, 226, 226);
+  font-size: 9px;
 }
 #enable {
+  display: none;
+}
+#enable2 {
   display: none;
 }
 body {
@@ -32,7 +39,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: #ff3333;
+  background-color: rgb(248, 194, 194);
 }
 .account-page {
   padding: 50px 0;

@@ -9,15 +9,15 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
-<script src="https://kit.fontawesome.com/a076d05399.js"></script>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
 
     <title> E-commerce</title>
 </head>
 
 <body>
-<div class="account-page">
+    <div class="account-page">
         <div class="container">
             <div class="row">
                 <div class="col-2">
@@ -30,9 +30,10 @@
                             <span onclick="register()">Sign Up</span>
                             <hr id="indicator">
                         </div>
-                        <form id="LoginForm">
-                            <input type="text" placeholder="Username or Email">
-                           
+                        <!--SIGNIN FORM-->
+                        <form id="LoginForm" action="/" method="GET">
+                            <input type="text" id="name" placeholder="Username or Email">
+                           <p id="error"></p>
                             <input type="password" name="password" id="password" placeholder="Password">
                             <span class="eye" onclick="showPassword();">
                                 <i id="enable" class="fa fa-eye" aria-hidden="true"></i>
@@ -62,18 +63,22 @@
                                         Github</div>
                                     <span><i class="fab fa-github"></i></span>
                                 </div>
-                            
+
                             </div>
                         </form>
+                        <!-- SIGNUP FORM-->
                         <form id="regForm">
-                            <input type="text" id="username" placeholder="Username">
-                            <input type="email" placeholder="Email">
-                            <input type="password" name="password" id="password" placeholder="Password">
-                            <span class="eye" onclick="showPassword();">
-                                <i id="enable" class="fa fa-eye" aria-hidden="true"></i>
-                                <i id="disable" class="fa fa-eye-slash" aria-hidden="true"></i>
+                            <input type="text" id="name2" placeholder="Username">
+                            <input type="email" id="email" placeholder="Email">
+                            <p id="error2"></p>
+                            <input type="password" name="password2" id="password2" placeholder="Password">
+                            <span class="eye" onclick="showPassword2();">
+                                <i id="enable2" class="fa fa-eye" aria-hidden="true"></i>
+                                <i id="disable2" class="fa fa-eye-slash" aria-hidden="true"></i>
                             </span>
                             <input type="submit" value="Sign in">
+
+
                             <br><br>
                             <div class="wrapper">
                                 <div class="icon facebook">
@@ -96,18 +101,18 @@
                                         Github</div>
                                     <span><i class="fab fa-github"></i></span>
                                 </div>
-                            
+
                             </div>
                         </form>
                     </div>
-                   
+
                 </div>
-              
+
             </div>
         </div>
     </div>
-<script src="https://kit.fontawesome.com/a076d05399.js"></script>
-<script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
